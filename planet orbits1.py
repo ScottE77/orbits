@@ -194,7 +194,7 @@ def Leapfroggraph(N,FEPO):
     plt.figure(3)
     plt.loglog(values[2],values[1])
 
-def RK4step(r0,v0,h):
+def RK4step(r0,v0,h):#doesn't work yet, pls help based on runge kutta 4th order method
     r = math.sqrt((r0[0]**2)+(r0[1]**2))
     def f(x):
         return np.array([x[2],x[3],(((-1)/r**3)*(x[0])),(((-1)/r**3)*(x[1]))])
